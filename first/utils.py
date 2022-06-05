@@ -54,7 +54,7 @@ class SearchDAO:
         """Сортировка таблицы по возрастному рейтингу"""
         cursor = self.load_tablet()
         rating_title = []
-        parametrs = {'children': 'G',
+        parametrs = {'children': "'G'",
                      'family': "'G', 'PG', 'PG-13'",
                      'adult': "'R','NC-17'",
                      }
